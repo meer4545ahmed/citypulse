@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Uws2AIbI1WNy0L7LibpUV"
+uri = "file://exports/architecture.png"
+type = "image"
+title = "CityPulse — System Architecture"
+
+[[outputs]]
+id = "Y3_hDHHiA0rCMOHUOukm6"
+uri = "file://exports/CityPulse_Project_Report.md"
+type = "text"
+title = "CityPulse — Full Project Report"

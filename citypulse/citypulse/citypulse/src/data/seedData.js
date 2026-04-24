@@ -1,0 +1,42 @@
+export const CITY_ZONES = ['north', 'south', 'east', 'west', 'central']
+
+export const ZONE_COORDINATES = {
+  north: { lat: 13.0827, lng: 77.5946, label: 'North Bengaluru' },
+  south: { lat: 12.9141, lng: 77.602, label: 'South Bengaluru' },
+  east: { lat: 12.9784, lng: 77.6408, label: 'East Bengaluru' },
+  west: { lat: 12.9716, lng: 77.5634, label: 'West Bengaluru' },
+  central: { lat: 12.9716, lng: 77.5946, label: 'Central Bengaluru' },
+}
+
+export const INITIAL_METRICS = [
+  { zone_id: 'north', metric_type: 'traffic', value: 72, severity: 'high', lat: 13.0827, lng: 77.5946 },
+  { zone_id: 'south', metric_type: 'traffic', value: 45, severity: 'medium', lat: 12.9141, lng: 77.602 },
+  { zone_id: 'east', metric_type: 'traffic', value: 88, severity: 'critical', lat: 12.9784, lng: 77.6408 },
+  { zone_id: 'west', metric_type: 'traffic', value: 31, severity: 'low', lat: 12.9716, lng: 77.5634 },
+  { zone_id: 'central', metric_type: 'traffic', value: 91, severity: 'critical', lat: 12.9716, lng: 77.5946 },
+  { zone_id: 'north', metric_type: 'energy', value: 340, severity: 'medium', lat: 13.0827, lng: 77.5946 },
+  { zone_id: 'south', metric_type: 'energy', value: 210, severity: 'low', lat: 12.9141, lng: 77.6020 },
+  { zone_id: 'east', metric_type: 'energy', value: 480, severity: 'high', lat: 12.9784, lng: 77.6408 },
+  { zone_id: 'west', metric_type: 'energy', value: 290, severity: 'low', lat: 12.9716, lng: 77.5634 },
+  { zone_id: 'central', metric_type: 'energy', value: 520, severity: 'critical', lat: 12.9716, lng: 77.5946 },
+  { zone_id: 'north', metric_type: 'air', value: 142, severity: 'high', lat: 13.0827, lng: 77.5946 },
+  { zone_id: 'south', metric_type: 'air', value: 87, severity: 'medium', lat: 12.9141, lng: 77.6020 },
+  { zone_id: 'east', metric_type: 'air', value: 201, severity: 'critical', lat: 12.9784, lng: 77.6408 },
+  { zone_id: 'west', metric_type: 'air', value: 63, severity: 'low', lat: 12.9716, lng: 77.5634 },
+  { zone_id: 'central', metric_type: 'air', value: 178, severity: 'high', lat: 12.9716, lng: 77.5946 },
+  { zone_id: 'north', metric_type: 'water', value: 68, severity: 'low', lat: 13.0827, lng: 77.5946 },
+  { zone_id: 'south', metric_type: 'water', value: 52, severity: 'medium', lat: 12.9141, lng: 77.6020 },
+  { zone_id: 'east', metric_type: 'water', value: 34, severity: 'high', lat: 12.9784, lng: 77.6408 },
+  { zone_id: 'west', metric_type: 'water', value: 71, severity: 'low', lat: 12.9716, lng: 77.5634 },
+  { zone_id: 'central', metric_type: 'water', value: 28, severity: 'critical', lat: 12.9716, lng: 77.5946 },
+  { zone_id: 'north', metric_type: 'waste', value: 78, severity: 'high', lat: 13.0827, lng: 77.5946 },
+  { zone_id: 'south', metric_type: 'waste', value: 45, severity: 'medium', lat: 12.9141, lng: 77.6020 },
+  { zone_id: 'east', metric_type: 'waste', value: 92, severity: 'critical', lat: 12.9784, lng: 77.6408 },
+  { zone_id: 'west', metric_type: 'waste', value: 30, severity: 'low', lat: 12.9716, lng: 77.5634 },
+  { zone_id: 'central', metric_type: 'waste', value: 88, severity: 'critical', lat: 12.9716, lng: 77.5946 },
+  { zone_id: 'north', metric_type: 'transport', value: 65, severity: 'medium', lat: 13.0827, lng: 77.5946 },
+  { zone_id: 'south', metric_type: 'transport', value: 40, severity: 'low', lat: 12.9141, lng: 77.6020 },
+  { zone_id: 'east', metric_type: 'transport', value: 85, severity: 'high', lat: 12.9784, lng: 77.6408 },
+  { zone_id: 'west', metric_type: 'transport', value: 55, severity: 'medium', lat: 12.9716, lng: 77.5634 },
+  { zone_id: 'central', metric_type: 'transport', value: 95, severity: 'critical', lat: 12.9716, lng: 77.5946 },
+]

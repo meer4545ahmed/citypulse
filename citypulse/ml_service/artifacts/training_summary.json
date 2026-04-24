@@ -1,0 +1,38 @@
+{
+  "trained_at": "2026-04-24T17:22:40.876737+00:00",
+  "rows": 21600,
+  "forecast_avg_mape": 6.84,
+  "forecast_avg_mae": 6.486,
+  "city_score": {
+    "mae": 0.78,
+    "features": 30,
+    "rows": 720
+  },
+  "anomaly": {
+    "traffic": {
+      "n_train": 3600,
+      "score_threshold": -0.5674
+    },
+    "energy": {
+      "n_train": 3600,
+      "score_threshold": -0.5704
+    },
+    "air": {
+      "n_train": 3600,
+      "score_threshold": -0.5732
+    },
+    "water": {
+      "n_train": 3600,
+      "score_threshold": -0.5704
+    },
+    "waste": {
+      "n_train": 3600,
+      "score_threshold": -0.568
+    },
+    "transport": {
+      "n_train": 3600,
+      "score_threshold": -0.5684
+    }
+  },
+  "n_forecasters": 30
+}

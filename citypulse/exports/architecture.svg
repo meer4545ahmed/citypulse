@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b16"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="frontGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1a2e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#070d1a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="mlGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0e2e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0d061a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e2a1f" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#06140f" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="extGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1f0e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#140f06" stop-opacity="0.95"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowV" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowO" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <!-- subtle grid -->
+  <g stroke="#0ea5b7" stroke-opacity="0.06">
+    <path d="M0 100H1600 M0 200H1600 M0 300H1600 M0 400H1600 M0 500H1600 M0 600H1600 M0 700H1600 M0 800H1600 M0 900H1600 M0 1000H1600"/>
+    <path d="M100 0V1100 M200 0V1100 M300 0V1100 M400 0V1100 M500 0V1100 M600 0V1100 M700 0V1100 M800 0V1100 M900 0V1100 M1000 0V1100 M1100 0V1100 M1200 0V1100 M1300 0V1100 M1400 0V1100 M1500 0V1100"/>
+  </g>
+
+  <!-- title -->
+  <text x="60" y="60" font-size="36" font-weight="800" fill="url(#cyanGrad)" letter-spacing="3">CITYPULSE — SYSTEM ARCHITECTURE</text>
+  <text x="60" y="88" font-size="14" fill="#94a3b8" letter-spacing="2">Smart-City Operations Platform · Bengaluru</text>
+  <text x="1300" y="60" font-size="12" fill="#64748b" letter-spacing="2">v4.20 · LIVE</text>
+
+  <!-- ============ USER LAYER ============ -->
+  <g>
+    <rect x="60" y="120" width="1480" height="90" rx="14" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="80" y="150" font-size="13" fill="#22d3ee" letter-spacing="3" font-weight="700">USERS</text>
+    <g font-size="14" fill="#e2e8f0">
+      <rect x="80" y="160" width="220" height="40" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.4"/>
+      <text x="100" y="185">City Officials &amp; Operators</text>
+
+      <rect x="320" y="160" width="220" height="40" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.4"/>
+      <text x="340" y="185">Department Analysts</text>
+
+      <rect x="560" y="160" width="220" height="40" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.4"/>
+      <text x="580" y="185">Field Engineers (Mobile)</text>
+
+      <rect x="800" y="160" width="220" height="40" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.4"/>
+      <text x="820" y="185">Citizens (Public Portal)</text>
+
+      <rect x="1040" y="160" width="220" height="40" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.4"/>
+      <text x="1060" y="185">Reviewers / Auditors</text>
+    </g>
+  </g>
+
+  <!-- arrow users -> frontend -->
+  <line x1="800" y1="210" x2="800" y2="245" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="810" y="232" font-size="11" fill="#22d3ee">HTTPS</text>
+
+  <!-- ============ FRONTEND LAYER ============ -->
+  <g>
+    <rect x="60" y="250" width="1480" height="200" rx="14" fill="url(#frontGrad)" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="80" y="280" font-size="13" fill="#22d3ee" letter-spacing="3" font-weight="700">FRONTEND  ·  React 19 + Vite (port 5000)</text>
+
+    <!-- pages -->
+    <g font-size="12" fill="#cbd5e1">
+      <rect x="80"  y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="95"  y="322" font-size="13" fill="#e2e8f0" font-weight="600">Command Center</text>
+      <text x="95"  y="342">Live KPIs · Map · Alerts</text>
+
+      <rect x="265" y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="280" y="322" font-size="13" fill="#e2e8f0" font-weight="600">6 Module Pages</text>
+      <text x="280" y="342">Traffic · Air · Energy ...</text>
+
+      <rect x="450" y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="465" y="322" font-size="13" fill="#e2e8f0" font-weight="600">AI Advisor</text>
+      <text x="465" y="342">LLM Q&amp;A on city state</text>
+
+      <rect x="635" y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#a78bfa" stroke-opacity="0.6"/>
+      <text x="650" y="322" font-size="13" fill="#e9d5ff" font-weight="600">ML Insights ★</text>
+      <text x="650" y="342">Forecasts · Anomalies</text>
+
+      <rect x="820" y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="835" y="322" font-size="13" fill="#e2e8f0" font-weight="600">Alerts Feed</text>
+      <text x="835" y="342">Realtime stream</text>
+
+      <rect x="1005" y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="1020" y="322" font-size="13" fill="#e2e8f0" font-weight="600">Auth / Session</text>
+      <text x="1020" y="342">Supabase Auth</text>
+
+      <rect x="1190" y="300" width="170" height="60" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="1205" y="322" font-size="13" fill="#e2e8f0" font-weight="600">Maps &amp; 3D</text>
+      <text x="1205" y="342">Leaflet · Three.js</text>
+    </g>
+
+    <!-- libs -->
+    <g font-size="11" fill="#94a3b8">
+      <rect x="80"  y="380" width="1280" height="50" rx="8" fill="#06090f" stroke="#22d3ee" stroke-opacity="0.2"/>
+      <text x="100" y="400" fill="#22d3ee" font-size="11" letter-spacing="2">CLIENT LIBS</text>
+      <text x="100" y="420" font-size="13" fill="#cbd5e1">Tailwind CSS · Zustand store · React Router · Recharts · React-Leaflet · Three.js · Axios · @supabase/supabase-js · Framer Motion · Lucide icons</text>
+    </g>
+  </g>
+
+  <!-- ============ THREE BACKBONE BOXES ============ -->
+
+  <!-- arrows from frontend to 3 backends -->
+  <line x1="350" y1="450" x2="280" y2="495" stroke="#10b981" stroke-width="2" marker-end="url(#arrowG)"/>
+  <line x1="800" y1="450" x2="800" y2="495" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowV)"/>
+  <line x1="1250" y1="450" x2="1320" y2="495" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowO)"/>
+
+  <text x="190" y="478" font-size="11" fill="#10b981">SQL · WebSocket</text>
+  <text x="700" y="478" font-size="11" fill="#a78bfa">REST / JSON  (port 8000)</text>
+  <text x="1280" y="478" font-size="11" fill="#f59e0b">HTTPS</text>
+
+  <!-- ============ DATA / SUPABASE ============ -->
+  <g>
+    <rect x="60" y="500" width="500" height="320" rx="14" fill="url(#dataGrad)" stroke="#10b981" stroke-opacity="0.6"/>
+    <text x="80" y="530" font-size="13" fill="#10b981" letter-spacing="3" font-weight="700">DATA &amp; REALTIME  ·  Supabase</text>
+
+    <g font-size="13" fill="#e2e8f0">
+      <rect x="80"  y="550" width="220" height="55" rx="8" fill="#0b1220" stroke="#10b981" stroke-opacity="0.4"/>
+      <text x="95"  y="572" font-weight="600">PostgreSQL</text>
+      <text x="95"  y="592" font-size="11" fill="#94a3b8">metrics · zones · alerts · policy_logs</text>
+
+      <rect x="320" y="550" width="220" height="55" rx="8" fill="#0b1220" stroke="#10b981" stroke-opacity="0.4"/>
+      <text x="335" y="572" font-weight="600">Realtime (WebSocket)</text>
+      <text x="335" y="592" font-size="11" fill="#94a3b8">Row-level change subscriptions</text>
+
+      <rect x="80"  y="615" width="220" height="55" rx="8" fill="#0b1220" stroke="#10b981" stroke-opacity="0.4"/>
+      <text x="95"  y="637" font-weight="600">Auth + RLS</text>
+      <text x="95"  y="657" font-size="11" fill="#94a3b8">Email/password · row policies</text>
+
+      <rect x="320" y="615" width="220" height="55" rx="8" fill="#0b1220" stroke="#10b981" stroke-opacity="0.4"/>
+      <text x="335" y="637" font-weight="600">Edge Functions (Deno)</text>
+      <text x="335" y="657" font-size="11" fill="#94a3b8">Serverless API hooks</text>
+
+      <rect x="80"  y="680" width="460" height="55" rx="8" fill="#0b1220" stroke="#10b981" stroke-opacity="0.4"/>
+      <text x="95"  y="702" font-weight="600">Storage (Object Bucket)</text>
+      <text x="95"  y="722" font-size="11" fill="#94a3b8">Reports · uploads · static assets</text>
+
+      <rect x="80"  y="745" width="460" height="55" rx="8" fill="#0b1220" stroke="#10b981" stroke-opacity="0.25"/>
+      <text x="95"  y="767" font-weight="600" fill="#94a3b8">Roadmap → TimescaleDB · PostGIS · Kafka</text>
+      <text x="95"  y="787" font-size="11" fill="#64748b">For billions of sensor rows + spatial queries</text>
+    </g>
+  </g>
+
+  <!-- ============ ML MICROSERVICE ============ -->
+  <g>
+    <rect x="580" y="500" width="500" height="450" rx="14" fill="url(#mlGrad)" stroke="#8b5cf6" stroke-opacity="0.65"/>
+    <text x="600" y="530" font-size="13" fill="#a78bfa" letter-spacing="3" font-weight="700">ML MICROSERVICE  ·  Python FastAPI (port 8000)</text>
+
+    <!-- endpoints -->
+    <g font-size="12" fill="#cbd5e1">
+      <rect x="600" y="550" width="460" height="80" rx="8" fill="#0b0716" stroke="#8b5cf6" stroke-opacity="0.4"/>
+      <text x="615" y="572" font-size="12" fill="#a78bfa" letter-spacing="2">REST ENDPOINTS</text>
+      <text x="615" y="592" font-size="12" fill="#e2e8f0">/health · /summary · /forecast · /forecast/batch</text>
+      <text x="615" y="612" font-size="12" fill="#e2e8f0">/anomaly · /city-score · /clean</text>
+    </g>
+
+    <!-- cleaning -->
+    <g>
+      <rect x="600" y="640" width="460" height="65" rx="8" fill="#0b0716" stroke="#8b5cf6" stroke-opacity="0.45"/>
+      <text x="615" y="662" font-size="12" fill="#a78bfa" letter-spacing="2">CLEANING LAYER</text>
+      <text x="615" y="682" font-size="12" fill="#cbd5e1">Schema · Units (°F→°C) · Bounds · MAD outliers</text>
+      <text x="615" y="698" font-size="11" fill="#94a3b8">Rolling-median imputation · Quality score per row</text>
+    </g>
+
+    <!-- models -->
+    <g>
+      <rect x="600" y="715" width="220" height="70" rx="8" fill="#0b0716" stroke="#8b5cf6" stroke-opacity="0.5"/>
+      <text x="615" y="735" font-size="12" fill="#a78bfa" font-weight="700">30 × Forecasters</text>
+      <text x="615" y="753" font-size="11" fill="#cbd5e1">GradientBoostingRegressor</text>
+      <text x="615" y="770" font-size="11" fill="#94a3b8">MAPE 6.84 % · MAE 6.49</text>
+
+      <rect x="840" y="715" width="220" height="70" rx="8" fill="#0b0716" stroke="#8b5cf6" stroke-opacity="0.5"/>
+      <text x="855" y="735" font-size="12" fill="#a78bfa" font-weight="700">6 × Anomaly Detectors</text>
+      <text x="855" y="753" font-size="11" fill="#cbd5e1">IsolationForest</text>
+      <text x="855" y="770" font-size="11" fill="#94a3b8">2 % contamination</text>
+
+      <rect x="600" y="795" width="460" height="70" rx="8" fill="#0b0716" stroke="#8b5cf6" stroke-opacity="0.5"/>
+      <text x="615" y="815" font-size="12" fill="#a78bfa" font-weight="700">1 × City-Score Regressor</text>
+      <text x="615" y="833" font-size="11" fill="#cbd5e1">RandomForestRegressor · 30 features</text>
+      <text x="615" y="852" font-size="11" fill="#94a3b8">MAE 0.78  ·  trained on 21,600 rows</text>
+    </g>
+
+    <!-- features + storage -->
+    <g>
+      <rect x="600" y="875" width="460" height="60" rx="8" fill="#0b0716" stroke="#8b5cf6" stroke-opacity="0.35"/>
+      <text x="615" y="895" font-size="12" fill="#a78bfa" letter-spacing="2">ARTIFACTS  ·  joblib</text>
+      <text x="615" y="915" font-size="11" fill="#cbd5e1">artifacts/forecast/*.joblib · anomaly/*.joblib · city_score.joblib</text>
+    </g>
+  </g>
+
+  <!-- ============ EXTERNAL APIs ============ -->
+  <g>
+    <rect x="1100" y="500" width="440" height="450" rx="14" fill="url(#extGrad)" stroke="#f59e0b" stroke-opacity="0.55"/>
+    <text x="1120" y="530" font-size="13" fill="#fbbf24" letter-spacing="3" font-weight="700">EXTERNAL APIs</text>
+
+    <g font-size="13" fill="#e2e8f0">
+      <rect x="1120" y="550" width="400" height="55" rx="8" fill="#1a120a" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="1135" y="572" font-weight="600">Open-Meteo</text>
+      <text x="1135" y="592" font-size="11" fill="#94a3b8">Live weather (temp · humidity · wind)</text>
+
+      <rect x="1120" y="615" width="400" height="55" rx="8" fill="#1a120a" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="1135" y="637" font-weight="600">OpenAQ</text>
+      <text x="1135" y="657" font-size="11" fill="#94a3b8">Real air-quality monitoring stations</text>
+
+      <rect x="1120" y="680" width="400" height="55" rx="8" fill="#1a120a" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="1135" y="702" font-weight="600">Geoapify</text>
+      <text x="1135" y="722" font-size="11" fill="#94a3b8">Geocoding · Route Planner</text>
+
+      <rect x="1120" y="745" width="400" height="55" rx="8" fill="#1a120a" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="1135" y="767" font-weight="600">Groq · Llama-3.3-70B</text>
+      <text x="1135" y="787" font-size="11" fill="#94a3b8">AI Advisor LLM (grounded on metrics)</text>
+
+      <rect x="1120" y="810" width="400" height="55" rx="8" fill="#1a120a" stroke="#f59e0b" stroke-opacity="0.4"/>
+      <text x="1135" y="832" font-weight="600">Google News RSS</text>
+      <text x="1135" y="852" font-size="11" fill="#94a3b8">City news ticker</text>
+
+      <rect x="1120" y="875" width="400" height="55" rx="8" fill="#1a120a" stroke="#f59e0b" stroke-opacity="0.25"/>
+      <text x="1135" y="897" font-weight="600" fill="#94a3b8">Roadmap → CPCB · IMD · BESCOM · BMTC GTFS · IUDX</text>
+      <text x="1135" y="915" font-size="11" fill="#64748b">Production ingestion via MQTT + Kafka</text>
+    </g>
+  </g>
+
+  <!-- ============ FOOTER PIPELINE ============ -->
+  <g>
+    <rect x="60" y="980" width="1480" height="90" rx="14" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.3"/>
+    <text x="80" y="1010" font-size="13" fill="#22d3ee" letter-spacing="3" font-weight="700">DATA PIPELINE  ·  Ingest → Clean → Train → Serve → Visualize</text>
+
+    <g font-size="13" fill="#e2e8f0">
+      <rect x="80"   y="1025" width="270" height="35" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="95"   y="1048">1 · Generate / Ingest 30-day history</text>
+
+      <rect x="365"  y="1025" width="240" height="35" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="380"  y="1048">2 · Clean + quality-score</text>
+
+      <rect x="620"  y="1025" width="240" height="35" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="635"  y="1048">3 · Train 37 models (sklearn)</text>
+
+      <rect x="875"  y="1025" width="240" height="35" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="890"  y="1048">4 · Serve via FastAPI REST</text>
+
+      <rect x="1130" y="1025" width="400" height="35" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="1145" y="1048">5 · Render in React (Recharts · Leaflet · Three.js)</text>
+    </g>
+  </g>
+
+  <!-- side legend -->
+  <g font-size="11" fill="#94a3b8">
+    <text x="60" y="1095">★ ML Insights is the new page added in this build · 37 models in production · 21,600 training rows · MAPE 6.84 %</text>
+  </g>
+</svg>
